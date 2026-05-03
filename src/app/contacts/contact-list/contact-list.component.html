@@ -1,0 +1,28 @@
+<div class="card mt-3">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h5>Contacts</h5>
+    <button class="btn btn-success">New Contact</button>
+  </div>
+
+  <ul class="list-group list-group-flush">
+    <li 
+      class="list-group-item"
+      *ngFor="let contact of contacts">
+
+      <div class="d-flex align-items-center">
+        <img 
+          [src]="contact.imageUrl" 
+          alt="contact image"
+          width="50"
+          class="me-3 rounded-circle">
+
+        <div>
+          <strong>{{ contact.name }}</strong><br>
+          {{ contact.email }}<br>
+          {{ contact.phone }}
+        </div>
+      </div>
+
+    </li>
+  </ul>
+</div>
