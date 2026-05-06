@@ -1,23 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Contact } from '../contact.model';
 
-import { ContactDetailComponent } from './contact-detail.component';
+@Component({
+  selector: 'cms-contact-detail',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './contact-detail.component.html',
+  styleUrl: './contact-detail.component.css'
+})
+export class ContactDetailComponent {
 
-describe('ContactDetailComponent', () => {
-  let component: ContactDetailComponent;
-  let fixture: ComponentFixture<ContactDetailComponent>;
+  @Input() contact!: Contact;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ContactDetailComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(ContactDetailComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+}

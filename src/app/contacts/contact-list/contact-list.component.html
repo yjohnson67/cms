@@ -5,24 +5,10 @@
   </div>
 
   <ul class="list-group list-group-flush">
-    <li 
-      class="list-group-item"
-      *ngFor="let contact of contacts">
-
-      <div class="d-flex align-items-center">
-        <img 
-          [src]="contact.imageUrl" 
-          alt="contact image"
-          width="50"
-          class="me-3 rounded-circle">
-
-        <div>
-          <strong>{{ contact.name }}</strong><br>
-          {{ contact.email }}<br>
-          {{ contact.phone }}
-        </div>
-      </div>
-
-    </li>
+    <cms-contact-item
+      *ngFor="let currentContact of contacts"
+      [contact]="currentContact"
+      (click)="onSelected(currentContact)">
+    </cms-contact-item>
   </ul>
 </div>
