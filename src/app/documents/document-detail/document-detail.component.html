@@ -1,1 +1,19 @@
-<p>document-detail works!</p>
+<div class="card mt-3" *ngIf="document">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h5>{{ document.name }}</h5>
+
+    <div>
+      <button class="btn btn-primary btn-sm me-2">View</button>
+      <button class="btn btn-info btn-sm me-2">Edit</button>
+      <button class="btn btn-danger btn-sm">Delete</button>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <p><strong>Description:</strong></p>
+    <p>{{ document.description }}</p>
+
+    <p><strong>URL:</strong></p>
+    <p>{{ document.url }}</p>
+  </div>
+</div>

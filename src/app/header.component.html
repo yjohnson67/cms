@@ -1,19 +1,28 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WeLearn CMS</a>
-    </div>
+<nav style="display: flex; align-items: center; gap: 35px; padding: 15px 25px; border-bottom: 1px solid #ddd;">
+  <a href="#" style="font-size: 24px; text-decoration: none;">
+    WeLearn CMS
+  </a>
 
-    <ul class="nav navbar-nav">
-      <li><a href="#">Documents</a></li>
-      <li><a href="#">Messages</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
+  <a href="#" (click)="onSelected('documents')" style="text-decoration: none;">
+    Documents
+  </a>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" role="button">User <span class="caret"></span></a>
-      </li>
-    </ul>
-  </div>
+  <a href="#" (click)="onSelected('messages')" style="text-decoration: none;">
+    Messages
+  </a>
+
+  <a href="#" (click)="onSelected('contacts')" style="text-decoration: none;">
+    Contacts
+  </a>
+
+  <div appDropdown style="margin-left: auto; position: relative; cursor: pointer;">
+  <span>User ▾</span>
+
+  <ul class="dropdown-menu" style="position: absolute; right: 0;">
+    <li><a class="dropdown-item" href="#">Login</a></li>
+    <li><a class="dropdown-item" href="#">Other</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+  </ul>
+</div>
 </nav>

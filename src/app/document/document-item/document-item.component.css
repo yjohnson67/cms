@@ -1,0 +1,7 @@
+.documentDiv {
+  width: 11rem;
+  min-height: 8rem;
+  margin: 0.5rem;
+  float: left;
+  cursor: pointer;
+}
