@@ -1,14 +1,16 @@
 <div class="card mt-3">
   <div class="card-header d-flex justify-content-between align-items-center">
     <h5>Documents</h5>
-    <button class="btn btn-success">Add Document</button>
+    <button class="btn btn-success" [routerLink]="['new']">
+  Add Document
+</button>
   </div>
 
   <div class="card-body">
     <cms-document-item
       *ngFor="let document of documents"
       [document]="document"
-      (click)="onSelectedDocument(document)">
+      [routerLink]="[document.id]">
     </cms-document-item>
   </div>
 </div>

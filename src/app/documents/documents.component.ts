@@ -1,3 +1,4 @@
+import { RouterOutlet } from '@angular/router';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +9,7 @@ import { DocumentDetailComponent } from './document-detail/document-detail.compo
 @Component({
   selector: 'cms-documents',
   standalone: true,
-  imports: [CommonModule, DocumentListComponent, DocumentDetailComponent],
+  imports: [CommonModule, DocumentListComponent, RouterOutlet],
   templateUrl: './documents.component.html',
   styleUrl: './documents.component.css'
 })

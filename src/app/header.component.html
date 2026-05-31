@@ -3,17 +3,17 @@
     WeLearn CMS
   </a>
 
-  <a href="#" (click)="onSelected('documents')" style="text-decoration: none;">
-    Documents
-  </a>
+ <a [routerLink]="['/documents']" style="text-decoration: none;">
+  Documents
+</a>
 
-  <a href="#" (click)="onSelected('messages')" style="text-decoration: none;">
-    Messages
-  </a>
+<a [routerLink]="['/messages']" style="text-decoration: none;">
+  Messages
+</a>
 
-  <a href="#" (click)="onSelected('contacts')" style="text-decoration: none;">
-    Contacts
-  </a>
+<a [routerLink]="['/contacts']" style="text-decoration: none;">
+  Contacts
+</a>
 
   <div appDropdown style="margin-left: auto; position: relative; cursor: pointer;">
   <span>User ▾</span>

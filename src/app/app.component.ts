@@ -1,3 +1,4 @@
+import { RouterOutlet } from '@angular/router';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -15,15 +16,12 @@ import { ContactsComponent } from './contacts/contacts.component';
     HeaderComponent,
     DocumentsComponent,
     MessageListComponent,
-    ContactsComponent
+    ContactsComponent,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  selectedFeature: string = 'contacts';
-
-  switchView(selectedFeature: string) {
-    this.selectedFeature = selectedFeature;
-  }
+ 
 }

@@ -49,7 +49,7 @@ export const MOCKDOCUMENTS: any[] = [
     ]
   },
   {
-    id: '10',
+    id: '2',
     name: 'CIT 460 - Enterprise Development',
     url: 'https://rkjackson.wordpress.com/',
     children: [
@@ -68,7 +68,7 @@ export const MOCKDOCUMENTS: any[] = [
     ]
   },
   {
-    id: '20',
+    id: '3',
     name: 'CIT 366 - Full Web Stack Development',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
     children: [
@@ -100,47 +100,42 @@ export const MOCKDOCUMENTS: any[] = [
     ]
   },
   {
-    id: '40',
-    name: 'CIT 366 - Full Web Stack Development',
-    url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
-  },
-  {
-    id: '41',
+    id: '4',
     name: 'CIT 240 - Introduction to Networking',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
   {
-    id: '42',
+    id: '5',
     name: 'CIT 370 - Computer Security I',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
   {
-    id: '43',
+    id: '6',
     name: 'CIT 360 - Object Oriented Programming II',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
   {
-    id: '44',
+    id: '7',
     name: 'CIT 470 - Computer Security II',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
   {
-    id: '45',
+    id: '8',
     name: 'CIT 262 - Mobile Development',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
   {
-    id: '46',
+    id: '9',
     name: 'CIT 230 - Web Page Development',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
   {
-    id: '47',
+    id: '10',
     name: 'CIT 236 - Web Development',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
   {
-    id: '48',
+    id: '11',
     name: 'CIT 340 - Networking II',
     url: 'https://content.byui.edu/file/b7c3e5ed-6947-497f-9d32-4e5b6b397cac/1/CIT 366 course description.pdf',
   },
