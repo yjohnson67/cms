@@ -1,9 +1,8 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component} from '@angular/core';
 import { Contact } from '../contact.model';
 import { CommonModule } from '@angular/common';
 import { ContactItemComponent } from '../contact-item/contact-item.component';
 import { ContactService } from '../contact.service';
-import { MOCKCONTACTS } from '../MOCKCONTACTS';
 
 @Component({
   selector: 'cms-contact-list',
@@ -19,9 +18,4 @@ export class ContactListComponent {
   constructor(private contactService: ContactService) {
     this.contacts = this.contactService.getContacts();
   }
-
-  onSelected(contact: Contact) {
-    this.contactService.contactSelectedEvent.emit(contact);
-  }
-
 }

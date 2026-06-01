@@ -7,8 +7,7 @@
   <ul class="list-group list-group-flush">
     <cms-contact-item
       *ngFor="let currentContact of contacts"
-      [contact]="currentContact"
-      (click)="onSelected(currentContact)">
+      [contact]="currentContact">
     </cms-contact-item>
   </ul>
 </div>
