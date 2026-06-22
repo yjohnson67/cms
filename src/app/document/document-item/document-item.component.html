@@ -1,3 +1,6 @@
-<a class="list-group-item documentDiv">
+<a
+  class="list-group-item list-group-item-action documentDiv"
+  [routerLink]="['/documents', document.id]"
+  style="cursor: pointer;">
   {{ document.name }}
 </a>

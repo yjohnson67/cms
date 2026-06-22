@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router, Params } from '@angular/router';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, Params, RouterLink } from '@angular/router';
+
 import { Document } from '../document.model';
 import { DocumentsService } from '../documents.service';
 
@@ -27,5 +27,22 @@ export class DocumentDetailComponent implements OnInit {
       this.id = params['id'];
       this.document = this.documentService.getDocument(this.id);
     });
+  }
+
+  onDelete() {
+    if (!this.document) {
+      return;
+    }
+
+    this.documentService.deleteDocument(this.document);
+    this.router.navigate(['/documents']);
+  }
+
+  onView() {
+    if (!this.document || !this.document.url) {
+      return;
+    }
+
+    window.open(this.document.url, '_blank');
   }
 }
